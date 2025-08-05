@@ -37,17 +37,19 @@ let package = Package(
             dependencies:["YukariSakuraShizukuCaedeArt"],
             path: "Sources/Ala",
         ),
-
+/*
         .target(
             name: "Fujisan",
-            path: "Sources/Fujisan",
-            publicHeadersPath: "Include"
+            dependencies: ["CxxFujisan"],
+            path: "Sources/Fujisan"
+        ),
+*/
+        .target(
+            name: "Fujisan",
+            path: "Sources/CxxFujisan",
+            publicHeadersPath: "Include",
+            cxxSettings : [],
+            swiftSettings: [.interoperabilityMode(.Cxx)]
         )
-
     ]
-
 )
-
-var fujisanCxxSettings: [CXXSetting] = [
-    
-]
