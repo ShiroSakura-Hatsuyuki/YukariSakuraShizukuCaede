@@ -9,7 +9,7 @@ let package = Package(
         //产品定义了一个包所生成的可执行文件和库，使它们对其他包可见。
         .library(
             name: "YukariSakuraShizukuCaedeArt",
-            targets: ["YukariSakuraShizukuCaedeArt","Fujisan"]
+            targets: ["YukariSakuraShizukuCaedeArt","Fujisan","CxxFujisan"]
         ),
 
         .executable(
@@ -37,19 +37,21 @@ let package = Package(
             dependencies:["YukariSakuraShizukuCaedeArt"],
             path: "Sources/Ala",
         ),
-/*
+
         .target(
             name: "Fujisan",
             dependencies: ["CxxFujisan"],
             path: "Sources/Fujisan"
         ),
-*/
+
         .target(
-            name: "Fujisan",
+            name: "CxxFujisan",
             path: "Sources/CxxFujisan",
             publicHeadersPath: "Include",
             cxxSettings : [],
             swiftSettings: [.interoperabilityMode(.Cxx)]
-        )
+        ),
+        
+
     ]
 )

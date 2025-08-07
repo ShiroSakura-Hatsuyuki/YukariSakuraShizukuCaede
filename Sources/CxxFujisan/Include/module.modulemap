@@ -1,4 +1,4 @@
-module Fujisan {
+module CxxFujisan {
     header "suki.hpp"
     export *
 }

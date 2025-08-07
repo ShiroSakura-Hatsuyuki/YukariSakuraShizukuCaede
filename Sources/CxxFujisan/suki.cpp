@@ -22,6 +22,11 @@ std::string zxhl(void) {
     return "姐姐，我爱你";
 }
 
+char* morechar(void) {
+    static char message[] = "姐姐，我想你";
+    return message;
+}
+
 /*
 std::string cincin(void) {
     std::string message;

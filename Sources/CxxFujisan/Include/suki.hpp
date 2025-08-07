@@ -10,6 +10,7 @@ void xihuandehua(void);
 char cincin(void);
 //std::string zxhl(void);
 
+
 #ifdef __cplusplus
 }
 #endif

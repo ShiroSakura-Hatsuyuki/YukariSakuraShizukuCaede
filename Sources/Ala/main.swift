@@ -1,4 +1,6 @@
 //import CxxStdlib
+
+/*
 import Fujisan
 
 print("A")
@@ -16,3 +18,13 @@ func domosandesu(){
 }
 
 domosandesu()
+*/
+
+import Fujisan
+
+func WindowsDemo() {
+    // 调用 Windows API 显示消息框
+    let _ = Fujisan.createWindow()
+}
+
+WindowsDemo()
